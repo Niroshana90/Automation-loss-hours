@@ -12,3 +12,11 @@ else:
 
 wb = openpyxl.load_workbook(source_file)
 print(wb.get_sheet_names().__len__())
+
+if os.path.isfile(result_file):
+    os.remove(result_file)
+    print("removing existing files")
+
+print("creating new result file")
+result_wb = openpyxl.Workbook()
+result_wb.save(result_file)
