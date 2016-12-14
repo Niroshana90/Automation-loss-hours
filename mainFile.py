@@ -33,14 +33,14 @@ written_row_count = int(1)
 
 for i in range(1, ws.max_row - ws.min_row):
     if ws['B'][i].value == 'Result':
-        result_wb_ws.cell(row=written_row_count, column=1).value = ws['A'][i].value
-        result_wb_ws.cell(row=written_row_count, column=2).value = ws['B'][i].value
-        result_wb_ws.cell(row=written_row_count, column=3).value = ws['F'][i].value
-        result_wb_ws.cell(row=written_row_count, column=4).value = ws['G'][i].value
-        result_wb_ws.cell(row=written_row_count, column=5).value = ws['H'][i].value
-        result_wb_ws.cell(row=written_row_count, column=6).value = ws['I'][i].value
-        result_wb_ws.cell(row=written_row_count, column=7).value = ws['J'][i].value
-        print('.', end='')
+        result_wb_ws.cell(row=written_row_count, column=2).value = ws['A'][i].value
+        result_wb_ws.cell(row=written_row_count, column=3).value = ws['B'][i].value
+        result_wb_ws.cell(row=written_row_count, column=4).value = ws['F'][i].value
+        result_wb_ws.cell(row=written_row_count, column=5).value = ws['G'][i].value
+        result_wb_ws.cell(row=written_row_count, column=6).value = ws['H'][i].value
+        result_wb_ws.cell(row=written_row_count, column=7).value = ws['I'][i].value
+        result_wb_ws.cell(row=written_row_count, column=8).value = ws['J'][i].value
+        print('.', sep=' ', end='', flush=True)
         written_row_count += 1
         #print(str(ws['A'][i].value) + '\t\t' + ws['B'][i].value + '\t\t' + str(ws['F'][i].value) + '\t\t' + str(ws['G'][i].value) + '\t\t' + str(ws['H'][i].value) + '\t\t' + str(ws['I'][i].value) + '\t\t' + str(ws['J'][i].value) + '\t\t' + str(ws['K'][i].value) )
 
